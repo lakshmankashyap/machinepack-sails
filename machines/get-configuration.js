@@ -32,7 +32,7 @@ module.exports = {
     success: {
       outputFriendlyName: 'Config value',
       outputDescription: 'The value of the specified `sails.config` key.',
-      example: '*'
+      outputExample: '*'
     },
 
     noSuchConfig: {

@@ -23,7 +23,7 @@ module.exports = {
     success: {
       outputFriendlyName: 'Is production?',
       outputDescription: 'Whether or not the Sails app is running in the production environment.',
-      example: true
+      outputExample: true
     },
 
   },
