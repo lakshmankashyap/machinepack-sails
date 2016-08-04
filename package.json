@@ -17,11 +17,15 @@
     "machine": "^12.4.0"
   },
   "devDependencies": {
-    "mocha": "^3.0.1"
+    "mocha": "^3.0.1",
+    "sails": "^0.12.4"
   },
   "machinepack": {
     "friendlyName": "Sails",
     "machineDir": "machines/",
-    "machines": []
+    "machines": [
+      "get-configuration",
+      "is-production"
+    ]
   }
 }
