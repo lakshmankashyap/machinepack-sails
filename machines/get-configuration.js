@@ -17,13 +17,23 @@ module.exports = {
 
 
   inputs: {
+
     key: {
       friendlyName: 'Config key',
       description: 'The `sails.config` key to retrieve the value of.',
       extendedDescription: 'Use dot notation to retrieve nested keys, e.g. "log.level" to retrieve the value of `sails.config.log.level`".',
       example: 'log.level',
       required: true
+    },
+
+    expectedOutput: {
+      friendlyName: 'Example result',
+      description: 'Optional example to use to determine the expected output type.',
+      extendedDescription: 'If an example result is provided, the retrieved configuration value will be cast to the example\'s type.',
+      example: '===',
+      isExemplar: true
     }
+
   },
 
 
@@ -32,7 +42,7 @@ module.exports = {
     success: {
       outputFriendlyName: 'Config value',
       outputDescription: 'The value of the specified `sails.config` key.',
-      outputExample: '*'
+      like: 'expectedOutput'
     },
 
     noSuchConfig: {
