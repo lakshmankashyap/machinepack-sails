@@ -1,7 +1,7 @@
 {
   "name": "machinepack-sails",
   "version": "0.1.0",
-  "description": "Machines for interfacing with a Sails application",
+  "description": "General purpose machines for interfacing with a Sails application.",
   "scripts": {
     "test": "mocha tests/** -R spec"
   },
@@ -10,14 +10,14 @@
     "machines",
     "machinepack"
   ],
-  "author": "",
+  "author": "The Treeline Company",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^3.10.1",
+    "lodash": "3.10.1",
     "machine": "^12.4.0"
   },
   "devDependencies": {
-    "mocha": "^3.0.1",
+    "mocha": "3.0.1",
     "sails": "^0.12.4"
   },
   "machinepack": {
