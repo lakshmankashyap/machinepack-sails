@@ -36,7 +36,7 @@ module.exports = {
 
     // Ensure `env.sails`, returning through the `error` exit
     // if it cannot be found or is not an object.
-    if (!_.isObject(env.sails)) {
+    if (!_.isObject(env.sails) || env.sails.constructor.name !== 'Sails') {
       return exits.error(new Error('No Sails application object could be found in the machine environment!'));
     }
 
