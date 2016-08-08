@@ -2,7 +2,7 @@ var assert = require('assert');
 var MPSails = require('../');
 var lifecycle = require('./helpers/lifecycle');
 
-describe('machinepack-sails: get-configuration', function() {
+describe('machinepack-sails: is-production', function() {
 
   describe('when the app is not in the production environment', function() {
 
