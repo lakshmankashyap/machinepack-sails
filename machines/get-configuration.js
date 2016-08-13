@@ -10,6 +10,9 @@ module.exports = {
   extendedDescription: 'Looks for the specified key (using dot notation) under the `sails.config` object.  If the key does not exist, returns through the `noSuchConfig` exit.',
 
 
+  habitat: 'sails',
+
+
   sideEffects: 'cacheable',
 
 

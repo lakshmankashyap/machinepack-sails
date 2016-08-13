@@ -10,6 +10,9 @@ module.exports = {
   sideEffects: 'cacheable',
 
 
+  habitat: 'sails',
+
+
   sync: true,
 
 
