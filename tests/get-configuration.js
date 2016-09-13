@@ -28,7 +28,7 @@ describe('machinepack-sails: get-configuration', function() {
         throw new Error('Triggered `success` exit instead of `noSuchConfig`!');
       },
       error: done,
-      noSuchConfig: done
+      noSuchConfig: function(err){return done();}
     });
   });
 
