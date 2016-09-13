@@ -70,7 +70,12 @@ module.exports = {
     // Check whether the sails config has the specified key.
     if (!_.has(env.sails.config, inputs.key)) {
       // If not, return through the `noSuchConfig` exit.
-      return exits.noSuchConfig();
+      return exits.noSuchConfig(new Error('The specified config key (`'+inputs.key+'`) could not be found. '+
+                                          'Check that it is defined in your Sails app\'s configuration. '+
+                                          'Also, if this is production-only or development-only config, '+
+                                          'be sure that this app is running in the appropriate Sails environment. '+
+                                          'See http://sailsjs.org/documentation/concepts/configuration for more info.'
+                                          ));
     }
 
     // Retrieve the specified configuration value.
