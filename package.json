@@ -25,7 +25,10 @@
     "machineDir": "machines/",
     "machines": [
       "get-configuration",
-      "is-production"
+      "is-production",
+      "debug",
+      "warn",
+      "error"
     ]
   }
 }
