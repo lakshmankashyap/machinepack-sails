@@ -18,12 +18,12 @@ describe('machinepack-sails: get-configuration', function() {
   });
 
   it ('should return the correct value when called with an existing `sails.config` key', function() {
-    var value = MPSails.getConfiguration({key: 'log.level'}).setEnvironment({sails: app}).execSync();
+    var value = MPSails.getConfiguration({key: 'log.level'}).setEnv({sails: app}).execSync();
     assert.equal(value, 'error');
   });
 
   it ('should return trigger the `noSuchConfig` exit when called with a non-existent `sails.config` key', function(done) {
-    MPSails.getConfiguration({key: 'blog.level'}).setEnvironment({sails: app}).exec({
+    MPSails.getConfiguration({key: 'blog.level'}).setEnv({sails: app}).exec({
       success: function() {
         throw new Error('Triggered `success` exit instead of `noSuchConfig`!');
       },

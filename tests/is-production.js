@@ -16,7 +16,7 @@ describe('machinepack-sails: is-production', function() {
       lifecycle.loadSails(function(err, _sails) {
         if (err) {return done(err);}
         app = _sails;
-        var value = MPSails.isProduction().setEnvironment({sails: app}).execSync();
+        var value = MPSails.isProduction().setEnv({sails: app}).execSync();
         assert.equal(value, false);
         return done();
       });
@@ -36,7 +36,7 @@ describe('machinepack-sails: is-production', function() {
       lifecycle.loadSails({environment: 'production'}, function(err, _sails) {
         if (err) {return done(err);}
         app = _sails;
-        var value = MPSails.isProduction().setEnvironment({sails: app}).execSync();
+        var value = MPSails.isProduction().setEnv({sails: app}).execSync();
         assert.equal(value, true);
         return done();
       });
