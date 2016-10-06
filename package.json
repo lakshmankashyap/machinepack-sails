@@ -1,6 +1,6 @@
 {
   "name": "machinepack-sails",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "General purpose machines for interfacing with a Sails application.",
   "scripts": {
     "test": "mocha tests/** -R spec"
